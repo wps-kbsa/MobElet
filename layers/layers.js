@@ -238,8 +238,8 @@ lyr_EletropostosEtapa3_7.set('fieldLabels', {'id': 'hidden field', });
 lyr_EletropostosEtapa2_8.set('fieldLabels', {'id': 'hidden field', });
 lyr_EletropostosEtapa1_9.set('fieldLabels', {'id': 'hidden field', });
 lyr_EletropostosParticulares_10.set('fieldLabels', {'id': 'no label', });
-lyr_VERegistrados_11.set('fieldLabels', {'id': 'hidden field', 'Quant.': 'no label', 'Ranking': 'no label', 'Município': 'no label', });
-lyr_RendaMdiaMensal_12.set('fieldLabels', {'id': 'hidden field', 'Municípo': 'no label', 'Renda': 'no label', });
+lyr_VERegistrados_11.set('fieldLabels', {'id': 'hidden field', 'Quant.': 'no label', 'Ranking': 'no label', 'Município': 'hidden field', });
+lyr_RendaMdiaMensal_12.set('fieldLabels', {'id': 'hidden field', 'Municípo': 'hidden field', 'Renda': 'no label', });
 lyr_RendaMdiaMensal_12.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
