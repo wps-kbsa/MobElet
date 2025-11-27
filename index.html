@@ -36,11 +36,9 @@
         </style>
 
         <style>
-        html, body, #map {
-            width: 100%;
-            height: 100%;
-            padding: 0;
-            margin: 0;
+        #map {
+            width: 1096px;
+            height: 635px;
         }
         </style>
         <title>RoadMap - Expansão da Mobilidade Elétrica em Minas Gerais</title>
@@ -53,14 +51,16 @@
             </div>
         </div>
         <script src="resources/qgis2web_expressions.js"></script>
+<script src="resources/proj4.js"></script>
+        <script>proj4.defs('EPSG:4674','+proj=longlat +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +no_defs');</script>
         <script src="./resources/functions.js"></script>
         <script src="./resources/ol.js"></script>
         <script src="./resources/ol-layerswitcher.js"></script>
         <script src="resources/photon-geocoder-autocomplete.min.js"></script>
-        <script src="layers/LimitesMunicipais_1.js"></script><script src="layers/RodoviasFederais_2.js"></script><script src="layers/RodoviasEstaduais_3.js"></script><script src="layers/TrechosEtapa3_4.js"></script><script src="layers/TrechosEtapa2_5.js"></script><script src="layers/TrechosEtapa1_6.js"></script><script src="layers/EletropostosEtapa3_7.js"></script><script src="layers/EletropostosEtapa2_8.js"></script><script src="layers/EletropostosEtapa1_9.js"></script><script src="layers/EletropostosExistentesParitulares_10.js"></script><script src="layers/VERegistrados_11.js"></script><script src="layers/RendaMdiaMensal_12.js"></script>
-        <script src="styles/LimitesMunicipais_1_style.js"></script><script src="styles/RodoviasFederais_2_style.js"></script><script src="styles/RodoviasEstaduais_3_style.js"></script><script src="styles/TrechosEtapa3_4_style.js"></script><script src="styles/TrechosEtapa2_5_style.js"></script><script src="styles/TrechosEtapa1_6_style.js"></script><script src="styles/EletropostosEtapa3_7_style.js"></script><script src="styles/EletropostosEtapa2_8_style.js"></script><script src="styles/EletropostosEtapa1_9_style.js"></script><script src="styles/EletropostosExistentesParitulares_10_style.js"></script><script src="styles/VERegistrados_11_style.js"></script><script src="styles/RendaMdiaMensal_12_style.js"></script>
+        <script src="layers/LimiteMunicipal_1.js"></script><script src="layers/RodoviaFederai_2.js"></script><script src="layers/RodoviaEstadual_3.js"></script><script src="layers/TrechoEtapa3_4.js"></script><script src="layers/TrechoEtapa2_5.js"></script><script src="layers/TrechoEtapa1_6.js"></script><script src="layers/EletropostoEtapa3_7.js"></script><script src="layers/EletropostoEtapa2_8.js"></script><script src="layers/EletropostoEtapa1_9.js"></script><script src="layers/EletropostoExistente_10.js"></script><script src="layers/VeculoEltricoRegistrado_11.js"></script><script src="layers/RendaMdiaMensal_12.js"></script>
+        <script src="styles/LimiteMunicipal_1_style.js"></script><script src="styles/RodoviaFederai_2_style.js"></script><script src="styles/RodoviaEstadual_3_style.js"></script><script src="styles/TrechoEtapa3_4_style.js"></script><script src="styles/TrechoEtapa2_5_style.js"></script><script src="styles/TrechoEtapa1_6_style.js"></script><script src="styles/EletropostoEtapa3_7_style.js"></script><script src="styles/EletropostoEtapa2_8_style.js"></script><script src="styles/EletropostoEtapa1_9_style.js"></script><script src="styles/EletropostoExistente_10_style.js"></script><script src="styles/VeculoEltricoRegistrado_11_style.js"></script><script src="styles/RendaMdiaMensal_12_style.js"></script>
         <script src="./layers/layers.js" type="text/javascript"></script> 
         <script src="./resources/Autolinker.min.js"></script>
-        <script src="./resources/qgis2web.js"></script>        
+        <script src="./resources/qgis2web.js"></script>
     </body>
 </html>

@@ -4,12 +4,15 @@ var map = new ol.Map({
     renderer: 'canvas',
     layers: layersList,
     view: new ol.View({
-        extent: [-5830194.190141, -2653753.417045, -4074807.653126, -1580590.404937], maxZoom: 10, minZoom: 1
+         maxZoom: 10, minZoom: 1, projection: new ol.proj.Projection({
+            code: 'EPSG:4674',
+            //extent: [-51.046089, -22.922756, -39.856823, -14.233179],
+            units: 'degrees'})
     })
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([-5830194.190141, -2653753.417045, -4074807.653126, -1580590.404937], map.getSize());
+map.getView().fit([-53.335909, -23.139996, -37.567003, -14.015940], map.getSize());
 
 //full zooms only
 map.getView().setProperties({constrainResolution: true});
@@ -470,17 +473,6 @@ var bottomRightContainerDiv = document.getElementById('bottom-right-container')
 
 //title
 
-var Title = new ol.control.Control({
-    element: (() => {
-        var titleElement = document.createElement('div');
-        titleElement.className = 'bottom-left-title ol-control';
-        titleElement.innerHTML = '<h2 class="project-title">RoadMap - Expansão da Mobilidade Elétrica em Minas Gerais</h2>';
-        return titleElement;
-    })(),
-    target: 'bottom-left-container'
-});
-map.addControl(Title)
-    
 //abstract
 
 
