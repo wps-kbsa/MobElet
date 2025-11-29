@@ -1,5 +1,5 @@
 ol.proj.proj4.register(proj4);
-//ol.proj.get("EPSG:4674").setExtent([-53.335909, -23.139996, -37.567003, -14.015940]);
+//ol.proj.get("EPSG:4674").setExtent([-51.325821, -23.284895, -39.577091, -13.871040]);
 var wms_layers = [];
 
 var format_LimiteMunicipal_0 = new ol.format.GeoJSON();
@@ -156,20 +156,20 @@ var lyr_EletropostoE2_9 = new ol.layer.Vector({
                 interactive: true,
                 title: '<img src="styles/legend/EletropostoE2_9.png" /> Eletroposto - E2'
             });
-var format_EletropostoE1_10 = new ol.format.GeoJSON();
-var features_EletropostoE1_10 = format_EletropostoE1_10.readFeatures(json_EletropostoE1_10, 
+var format_EletroPostoE1_10 = new ol.format.GeoJSON();
+var features_EletroPostoE1_10 = format_EletroPostoE1_10.readFeatures(json_EletroPostoE1_10, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:4674'});
-var jsonSource_EletropostoE1_10 = new ol.source.Vector({
+var jsonSource_EletroPostoE1_10 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_EletropostoE1_10.addFeatures(features_EletropostoE1_10);
-var lyr_EletropostoE1_10 = new ol.layer.Vector({
+jsonSource_EletroPostoE1_10.addFeatures(features_EletroPostoE1_10);
+var lyr_EletroPostoE1_10 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_EletropostoE1_10, 
-                style: style_EletropostoE1_10,
-                popuplayertitle: 'Eletroposto - E1',
+                source:jsonSource_EletroPostoE1_10, 
+                style: style_EletroPostoE1_10,
+                popuplayertitle: 'EletroPosto - E1',
                 interactive: true,
-                title: '<img src="styles/legend/EletropostoE1_10.png" /> Eletroposto - E1'
+                title: '<img src="styles/legend/EletroPostoE1_10.png" /> EletroPosto - E1'
             });
 var format_VecEltricoRegistrado_11 = new ol.format.GeoJSON();
 var features_VecEltricoRegistrado_11 = format_VecEltricoRegistrado_11.readFeatures(json_VecEltricoRegistrado_11, 
@@ -202,8 +202,8 @@ var lyr_RendaMdiaMensal_12 = new ol.layer.Vector({
                 title: '<img src="styles/legend/RendaMdiaMensal_12.png" /> Renda Média Mensal'
             });
 
-lyr_LimiteMunicipal_0.setVisible(true);lyr_IrradiaoSolar_1.setVisible(true);lyr_RodFederai_2.setVisible(true);lyr_RodEstadual_3.setVisible(true);lyr_TrechoE3_4.setVisible(true);lyr_TrechoE2_5.setVisible(true);lyr_TrechoE1_6.setVisible(true);lyr_EletropostoExistente_7.setVisible(true);lyr_EletropostoE3_8.setVisible(true);lyr_EletropostoE2_9.setVisible(true);lyr_EletropostoE1_10.setVisible(true);lyr_VecEltricoRegistrado_11.setVisible(true);lyr_RendaMdiaMensal_12.setVisible(true);
-var layersList = [lyr_LimiteMunicipal_0,lyr_IrradiaoSolar_1,lyr_RodFederai_2,lyr_RodEstadual_3,lyr_TrechoE3_4,lyr_TrechoE2_5,lyr_TrechoE1_6,lyr_EletropostoExistente_7,lyr_EletropostoE3_8,lyr_EletropostoE2_9,lyr_EletropostoE1_10,lyr_VecEltricoRegistrado_11,lyr_RendaMdiaMensal_12];
+lyr_LimiteMunicipal_0.setVisible(true);lyr_IrradiaoSolar_1.setVisible(true);lyr_RodFederai_2.setVisible(true);lyr_RodEstadual_3.setVisible(true);lyr_TrechoE3_4.setVisible(true);lyr_TrechoE2_5.setVisible(true);lyr_TrechoE1_6.setVisible(true);lyr_EletropostoExistente_7.setVisible(true);lyr_EletropostoE3_8.setVisible(true);lyr_EletropostoE2_9.setVisible(true);lyr_EletroPostoE1_10.setVisible(true);lyr_VecEltricoRegistrado_11.setVisible(true);lyr_RendaMdiaMensal_12.setVisible(true);
+var layersList = [lyr_LimiteMunicipal_0,lyr_IrradiaoSolar_1,lyr_RodFederai_2,lyr_RodEstadual_3,lyr_TrechoE3_4,lyr_TrechoE2_5,lyr_TrechoE1_6,lyr_EletropostoExistente_7,lyr_EletropostoE3_8,lyr_EletropostoE2_9,lyr_EletroPostoE1_10,lyr_VecEltricoRegistrado_11,lyr_RendaMdiaMensal_12];
 lyr_LimiteMunicipal_0.set('fieldAliases', {'fid': 'fid', 'NM_MUN': 'NM_MUN', });
 lyr_RodFederai_2.set('fieldAliases', {'fid': 'fid', 'id_cide': 'id_cide', 'id_referen': 'id_referen', 'codigo_rod': 'codigo_rod', });
 lyr_RodEstadual_3.set('fieldAliases', {'fid': 'fid', 'id_cide': 'id_cide', 'id_referen': 'id_referen', 'codigo_rod': 'codigo_rod', });
@@ -211,9 +211,9 @@ lyr_TrechoE3_4.set('fieldAliases', {'fid': 'fid', 'layer': 'layer', 'path': 'pat
 lyr_TrechoE2_5.set('fieldAliases', {'fid': 'fid', 'layer': 'layer', 'path': 'path', 'Trech': 'Trech', });
 lyr_TrechoE1_6.set('fieldAliases', {'fid': 'fid', 'Trecho': 'Trecho', });
 lyr_EletropostoExistente_7.set('fieldAliases', {'id': 'id', });
-lyr_EletropostoE3_8.set('fieldAliases', {'fid': 'fid', 'Município': 'Município', 'Potência': 'Potência', 'Irradiacao': 'Irradiacao', 'x': 'x', 'y': 'y', });
-lyr_EletropostoE2_9.set('fieldAliases', {'fid': 'fid', 'Municipio': 'Municipio', 'Potência': 'Potência', 'Irradiacao': 'Irradiacao', 'x': 'x', 'y': 'y', });
-lyr_EletropostoE1_10.set('fieldAliases', {'fid': 'fid', 'Município': 'Município', 'Potência': 'Potência', 'Irradiacao': 'Irradiacao', 'x': 'x', 'y': 'y', });
+lyr_EletropostoE3_8.set('fieldAliases', {'fid': 'fid', 'Município': 'Município', 'Potência': 'Potência', 'x': 'x', 'y': 'y', 'Irradiação': 'Irradiação', 'Capacidade Instalada': 'Capacidade Instalada', });
+lyr_EletropostoE2_9.set('fieldAliases', {'fid': 'fid', 'Municipio': 'Municipio', 'Potência': 'Potência', 'x': 'x', 'y': 'y', 'Capacidade Instalada': 'Capacidade Instalada', 'Irradiação': 'Irradiação', });
+lyr_EletroPostoE1_10.set('fieldAliases', {'fid': 'fid', 'Município': 'Município', 'Cap. Instalada': 'Cap. Instalada', 'Potência': 'Potência', 'Irradiação': 'Irradiação', 'x': 'x', 'y': 'y', });
 lyr_VecEltricoRegistrado_11.set('fieldAliases', {'id': 'id', 'Quant.': 'Quant.', 'Ranking': 'Ranking', 'Município': 'Município', });
 lyr_RendaMdiaMensal_12.set('fieldAliases', {'id': 'id', 'Municípo': 'Municípo', 'Renda': 'Renda', });
 lyr_LimiteMunicipal_0.set('fieldImages', {'fid': 'TextEdit', 'NM_MUN': 'TextEdit', });
@@ -223,9 +223,9 @@ lyr_TrechoE3_4.set('fieldImages', {'fid': 'TextEdit', 'layer': 'TextEdit', 'path
 lyr_TrechoE2_5.set('fieldImages', {'fid': 'TextEdit', 'layer': 'TextEdit', 'path': 'TextEdit', 'Trech': '', });
 lyr_TrechoE1_6.set('fieldImages', {'fid': 'TextEdit', 'Trecho': '', });
 lyr_EletropostoExistente_7.set('fieldImages', {'id': 'TextEdit', });
-lyr_EletropostoE3_8.set('fieldImages', {'fid': 'TextEdit', 'Município': 'TextEdit', 'Potência': 'TextEdit', 'Irradiacao': 'TextEdit', 'x': 'TextEdit', 'y': 'TextEdit', });
-lyr_EletropostoE2_9.set('fieldImages', {'fid': 'TextEdit', 'Municipio': 'TextEdit', 'Potência': 'TextEdit', 'Irradiacao': 'TextEdit', 'x': 'TextEdit', 'y': 'TextEdit', });
-lyr_EletropostoE1_10.set('fieldImages', {'fid': 'TextEdit', 'Município': 'TextEdit', 'Potência': 'TextEdit', 'Irradiacao': 'TextEdit', 'x': 'TextEdit', 'y': 'TextEdit', });
+lyr_EletropostoE3_8.set('fieldImages', {'fid': 'TextEdit', 'Município': 'TextEdit', 'Potência': 'TextEdit', 'x': 'TextEdit', 'y': 'TextEdit', 'Irradiação': '', 'Capacidade Instalada': '', });
+lyr_EletropostoE2_9.set('fieldImages', {'fid': 'TextEdit', 'Municipio': 'TextEdit', 'Potência': 'TextEdit', 'x': 'TextEdit', 'y': 'TextEdit', 'Capacidade Instalada': '', 'Irradiação': '', });
+lyr_EletroPostoE1_10.set('fieldImages', {'fid': 'TextEdit', 'Município': 'TextEdit', 'Cap. Instalada': 'TextEdit', 'Potência': 'TextEdit', 'Irradiação': 'TextEdit', 'x': 'TextEdit', 'y': 'TextEdit', });
 lyr_VecEltricoRegistrado_11.set('fieldImages', {'id': 'TextEdit', 'Quant.': 'TextEdit', 'Ranking': 'TextEdit', 'Município': 'TextEdit', });
 lyr_RendaMdiaMensal_12.set('fieldImages', {'id': 'TextEdit', 'Municípo': 'TextEdit', 'Renda': 'TextEdit', });
 lyr_LimiteMunicipal_0.set('fieldLabels', {'fid': 'hidden field', 'NM_MUN': 'no label', });
@@ -235,9 +235,9 @@ lyr_TrechoE3_4.set('fieldLabels', {'fid': 'hidden field', 'layer': 'hidden field
 lyr_TrechoE2_5.set('fieldLabels', {'fid': 'hidden field', 'layer': 'hidden field', 'path': 'hidden field', 'Trech': 'no label', });
 lyr_TrechoE1_6.set('fieldLabels', {'fid': 'hidden field', 'Trecho': 'no label', });
 lyr_EletropostoExistente_7.set('fieldLabels', {'id': 'no label', });
-lyr_EletropostoE3_8.set('fieldLabels', {'fid': 'hidden field', 'Município': 'hidden field', 'Potência': 'no label', 'Irradiacao': 'no label', 'x': 'hidden field', 'y': 'hidden field', });
-lyr_EletropostoE2_9.set('fieldLabels', {'fid': 'hidden field', 'Municipio': 'hidden field', 'Potência': 'no label', 'Irradiacao': 'no label', 'x': 'hidden field', 'y': 'hidden field', });
-lyr_EletropostoE1_10.set('fieldLabels', {'fid': 'hidden field', 'Município': 'hidden field', 'Potência': 'no label', 'Irradiacao': 'no label', 'x': 'hidden field', 'y': 'hidden field', });
+lyr_EletropostoE3_8.set('fieldLabels', {'fid': 'hidden field', 'Município': 'hidden field', 'Potência': 'no label', 'x': 'hidden field', 'y': 'hidden field', 'Irradiação': 'no label', 'Capacidade Instalada': 'no label', });
+lyr_EletropostoE2_9.set('fieldLabels', {'fid': 'hidden field', 'Municipio': 'hidden field', 'Potência': 'no label', 'x': 'hidden field', 'y': 'hidden field', 'Capacidade Instalada': 'no label', 'Irradiação': 'no label', });
+lyr_EletroPostoE1_10.set('fieldLabels', {'fid': 'hidden field', 'Município': 'hidden field', 'Cap. Instalada': 'inline label - always visible', 'Potência': 'inline label - always visible', 'Irradiação': 'inline label - always visible', 'x': 'hidden field', 'y': 'hidden field', });
 lyr_VecEltricoRegistrado_11.set('fieldLabels', {'id': 'hidden field', 'Quant.': 'no label', 'Ranking': 'no label', 'Município': 'no label', });
 lyr_RendaMdiaMensal_12.set('fieldLabels', {'id': 'hidden field', 'Municípo': 'no label', 'Renda': 'no label', });
 lyr_RendaMdiaMensal_12.on('precompose', function(evt) {
